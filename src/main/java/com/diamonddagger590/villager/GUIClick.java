@@ -17,7 +17,7 @@ public class GUIClick implements Listener{
   
   @EventHandler
   public void onClick(InventoryClickEvent event){
-    if(event.getInventory() instanceof MerchantInventory){
+    if(event.getClickedInventory() instanceof MerchantInventory && event.getView().getTitle().contains("Demo")){
       MerchantInventory merchantInventory = (MerchantInventory) event.getInventory();
       event.setCancelled(true);
       Player player = (Player) event.getWhoClicked();
