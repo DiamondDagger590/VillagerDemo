@@ -1,0 +1,7 @@
+name: Villager
+version: 1.0
+main: com.diamonddagger590.villager.Villager
+api-version: 1.13
+commands:
+  demo:
+    description: demo
